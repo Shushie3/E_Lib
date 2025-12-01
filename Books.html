@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Library - Books</title>
+  <link rel="stylesheet" href="Lib.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">E-Library</div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search books...">
+      <button onclick="searchCards()">Search</button>
+    </div>
+
+    <nav class="top-nav">
+      <a href="Lib.html">Home</a>
+      <a href="Books.html" class="active">Books</a>
+      <a href="Research.html">Research</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <!-- MAIN NAV BAR -->
+  <nav class="main-nav">
+    <a href="Books.html" class="active">Books</a>
+    <a href="Research.html">Research Materials</a>
+    <a href="#">Services</a>
+    <a href="#">Events</a>
+  </nav>
+
+  <!-- CONTENT AREA -->
+  <section class="content">
+    <h2>Books Collection</h2>
+
+    <div class="card-grid" id="cardGrid">
+
+      <div class="card">
+        <img src="book1.jpg" alt="HTML Basics">
+        <h3>HTML Basics</h3>
+        <p>Learn the foundations of web development.</p>
+      </div>
+
+      <div class="card">
+        <img src="book2.jpg" alt="CSS Mastery">
+        <h3>CSS Mastery</h3>
+        <p>Design beautiful and responsive websites.</p>
+      </div>
+
+      <div class="card">
+        <img src="book3.jpg" alt="JavaScript Essentials">
+        <h3>JavaScript Essentials</h3>
+        <p>Master dynamic and interactive web features.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function searchCards() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('#cardGrid .card');
+
+      cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+        if (title.includes(input) || desc.includes(input)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

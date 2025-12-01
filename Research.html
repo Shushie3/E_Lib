@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Library - Research</title>
+  <link rel="stylesheet" href="Lib.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">E-Library</div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search research materials...">
+      <button onclick="searchCards()">Search</button>
+    </div>
+
+    <nav class="top-nav">
+      <a href="Lib.html">Home</a>
+      <a href="Books.html">Books</a>
+      <a href="Research.html" class="active">Research</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <nav class="main-nav">
+    <a href="Books.html">Books</a>
+    <a href="Research.html" class="active">Research Materials</a>
+    <a href="#">Services</a>
+    <a href="#">Events</a>
+  </nav>
+
+  <section class="content">
+    <h2>Research Materials</h2>
+
+    <div class="card-grid" id="cardGrid">
+
+      <div class="card">
+        <img src="research1.jpg" alt="AI Research 2025">
+        <h3>AI Research 2025</h3>
+        <p>Latest findings from artificial intelligence studies.</p>
+      </div>
+
+      <div class="card">
+        <img src="research2.jpg" alt="Cybersecurity Paper">
+        <h3>Cybersecurity Paper</h3>
+        <p>Understanding digital safety and data protection.</p>
+      </div>
+
+      <div class="card">
+        <img src="research3.jpg" alt="Blockchain Study">
+        <h3>Blockchain Study</h3>
+        <p>Exploring decentralized systems and applications.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function searchCards() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('#cardGrid .card');
+
+      cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+        if (title.includes(input) || desc.includes(input)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
