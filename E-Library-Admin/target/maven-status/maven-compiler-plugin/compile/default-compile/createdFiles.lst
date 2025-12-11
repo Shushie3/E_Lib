@@ -1,3 +1,7 @@
+com/example/elibraryadmin/model/Book.class
+com/example/elibraryadmin/controller/BookController.class
+com/example/elibraryadmin/controller/LoginController.class
+com/example/elibraryadmin/controller/StudentController.class
 com/example/elibraryadmin/Launcher.class
-com/example/elibraryadmin/HelloController.class
-com/example/elibraryadmin/HelloApplication.class
+com/example/elibraryadmin/controller/AdminDashboardController.class
+com/example/elibraryadmin/database/DBConnection.class

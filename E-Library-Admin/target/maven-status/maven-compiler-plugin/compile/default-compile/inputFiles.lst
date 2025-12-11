@@ -1,3 +1,9 @@
-/home/nath/Desktop/E-Library-Admin/src/main/java/com/example/elibraryadmin/HelloApplication.java
-/home/nath/Desktop/E-Library-Admin/src/main/java/com/example/elibraryadmin/HelloController.java
-/home/nath/Desktop/E-Library-Admin/src/main/java/com/example/elibraryadmin/Launcher.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/Launcher.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/controller/AdminDashboardController.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/controller/BookController.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/controller/LoginController.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/controller/StudentController.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/database/DBConnection.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/model/Admin.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/model/Book.java
+/home/nath/Desktop/E_Lib/E-Library-Admin/src/main/java/com/example/elibraryadmin/model/Student.java

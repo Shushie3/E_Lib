@@ -6,9 +6,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/elibrarydb";
-    private static final String USER = "root";
-    private static final String PASSWORD = ""; 
+    private static final String URL = "jdbc:mysql://localhost:3306/ELIBRARY?useSSL=false&serverTimezone=UTC"; // instance
+    private static final String USER = "root"; // user
+    private static final String PASSWORD = ""; // pass
     private static Connection connection = null;
 
     public static Connection getConnection() {
